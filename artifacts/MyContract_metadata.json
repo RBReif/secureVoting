@@ -1,0 +1,65 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "double",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"MyContract.sol": "MyContract"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"MyContract.sol": {
+			"keccak256": "0x09be031b2513cc76cd80b683476142f82df7867f7ad1fb0730bc138fea592644",
+			"urls": [
+				"bzz-raw://13c16d88ed10646d31ec4aaa33abe3900abd6a8cd7d4ef38add5ecf6ea10607f",
+				"dweb:/ipfs/QmXHA3agVKy8ofG58EkUDJTwkD9xypZQcPyRTrCG3Tpb9k"
+			]
+		}
+	},
+	"version": 1
+}
