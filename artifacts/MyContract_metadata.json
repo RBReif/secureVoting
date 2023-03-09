@@ -54,10 +54,10 @@
 	},
 	"sources": {
 		"MyContract.sol": {
-			"keccak256": "0x09be031b2513cc76cd80b683476142f82df7867f7ad1fb0730bc138fea592644",
+			"keccak256": "0x4596ace5dcdc23211507ef4454f73db06d8016c440cff0bf5e7e2b45315be419",
 			"urls": [
-				"bzz-raw://13c16d88ed10646d31ec4aaa33abe3900abd6a8cd7d4ef38add5ecf6ea10607f",
-				"dweb:/ipfs/QmXHA3agVKy8ofG58EkUDJTwkD9xypZQcPyRTrCG3Tpb9k"
+				"bzz-raw://ed50f7b6dc4b9fbbed84bbaa688b403ec751577e95334ec7ac0b762807c1e247",
+				"dweb:/ipfs/QmVgFW1dZwoXZ47jNkkyDkSf5x6Y7hvxDQGkdMTb2DoxRb"
 			]
 		}
 	},
