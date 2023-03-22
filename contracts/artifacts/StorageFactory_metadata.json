@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "createSimpleStorageeContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "sfStore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "simpleStorageArray",
+				"outputs": [
+					{
+						"internalType": "contract SimpleStorage",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/StorageFactory.sol": "StorageFactory"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/SimpleStorage.sol": {
+			"keccak256": "0x9f262329ee445a6dab6b7cc65c24d2d4e79afad2f0b5bccde7c6ed2cc9fc5cae",
+			"urls": [
+				"bzz-raw://779fe80c37f0d843ee6ac2a93a6a4595be7df869736278e35e19b0bfe890b17d",
+				"dweb:/ipfs/QmPtv2XbZ67Ctxn1yKJ7xdV1n4ced2U4pUaPAs68bd6hMk"
+			]
+		},
+		"contracts/StorageFactory.sol": {
+			"keccak256": "0x06b0adb1d461993e131a809d8ca04fc3f813b39d1eca276a03fbea1929e7525a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://86c209781f080fe2af64ea84797c9850778cd4fa261b6e3fcdc0dd6d2002380d",
+				"dweb:/ipfs/Qme6SxPuzLVUpnW5cwk8S42XzB2WPdQWaaVmHs9oHhXMnd"
+			]
+		}
+	},
+	"version": 1
+}

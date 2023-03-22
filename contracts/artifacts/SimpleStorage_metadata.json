@@ -1,6 +1,6 @@
 {
 	"compiler": {
-		"version": "0.8.18+commit.87f61d96"
+		"version": "0.6.12+commit.27d51765"
 	},
 	"language": "Solidity",
 	"output": {
@@ -124,9 +124,9 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"SimpleStorage.sol": "SimpleStorage"
+			"contracts/SimpleStorage.sol": "SimpleStorage"
 		},
-		"evmVersion": "paris",
+		"evmVersion": "istanbul",
 		"libraries": {},
 		"metadata": {
 			"bytecodeHash": "ipfs"
@@ -138,7 +138,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"SimpleStorage.sol": {
+		"contracts/SimpleStorage.sol": {
 			"keccak256": "0x9f262329ee445a6dab6b7cc65c24d2d4e79afad2f0b5bccde7c6ed2cc9fc5cae",
 			"urls": [
 				"bzz-raw://779fe80c37f0d843ee6ac2a93a6a4595be7df869736278e35e19b0bfe890b17d",
