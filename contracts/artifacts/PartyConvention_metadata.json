@@ -36,8 +36,51 @@
 						"type": "uint256"
 					}
 				],
-				"name": "closeMotion",
+				"name": "closeVoting",
 				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "str1",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "str2",
+						"type": "string"
+					}
+				],
+				"name": "compareString",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "txt_",
+						"type": "string"
+					}
+				],
+				"name": "createElection",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
@@ -49,7 +92,7 @@
 						"type": "string"
 					}
 				],
-				"name": "createRegularMotion",
+				"name": "createMOTION",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -58,32 +101,6 @@
 					}
 				],
 				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "id_",
-						"type": "uint256"
-					}
-				],
-				"name": "initiallySupportMotion",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "motionCounter",
-				"outputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -116,8 +133,27 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "participantsArray",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
-				"name": "reclaimOriginalVotingRight",
+				"name": "reclaimVote",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -132,7 +168,25 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "motionid_",
+						"name": "Votingid_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "runForOffice",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "Votingid_",
 						"type": "uint256"
 					}
 				],
@@ -145,6 +199,32 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id_",
+						"type": "uint256"
+					}
+				],
+				"name": "startElection",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id_",
+						"type": "uint256"
+					}
+				],
+				"name": "supportMotion",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -164,7 +244,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "motionid_",
+						"name": "Votingid_",
 						"type": "uint256"
 					},
 					{
@@ -173,7 +253,7 @@
 						"type": "uint256"
 					}
 				],
-				"name": "voteForMotion",
+				"name": "vote",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -186,6 +266,40 @@
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "votings",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "text",
+						"type": "string"
+					},
+					{
+						"internalType": "enum PartyConvention.VotingType",
+						"name": "vtype",
+						"type": "uint8"
+					},
+					{
+						"internalType": "enum PartyConvention.VotingStatus",
+						"name": "status",
+						"type": "uint8"
 					}
 				],
 				"stateMutability": "view",
@@ -205,7 +319,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"contracts/Voting02.sol": "PartyConvention"
+			"contracts/SecureVoting.sol": "PartyConvention"
 		},
 		"evmVersion": "paris",
 		"libraries": {},
@@ -235,12 +349,12 @@
 				"dweb:/ipfs/Qmct36zWXv3j7LZB83uwbg7TXwnZSN1fqHNDZ93GG98bGz"
 			]
 		},
-		"contracts/Voting02.sol": {
-			"keccak256": "0x8ae09f95cc3992d29360d653a000f6e559556c355df1042b161d8721d5ab9f0b",
+		"contracts/SecureVoting.sol": {
+			"keccak256": "0x67d0e3afc3d2ec8beea99f60bc6b95a9386332815fd1467e0373b92a710d604f",
 			"license": "GPL-3.0",
 			"urls": [
-				"bzz-raw://4a079b1fce76432dd2a1057a3fa2af3bb3d80b5484d53038c9b4b61bf3612dd9",
-				"dweb:/ipfs/QmZ6nNqNkcmTYLvVRMhkXGSmgtvg2nV7aThkwuHfkodk5L"
+				"bzz-raw://88e868b6f63c10b610f40c7b072c191fcd530370f8cf72c6ad0376d96342645e",
+				"dweb:/ipfs/QmRJxS7329bTNEzy51sPdbDthk4kooa6tCoB31DLbzuWR3"
 			]
 		}
 	},
